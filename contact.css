@@ -1,0 +1,103 @@
+body, h1, h2, h3, p, ul, li, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 1rem 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+header h1 {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+    color: #ffde59;
+}
+section {
+    padding: 2rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.contact-details {
+    margin-bottom: 2rem;
+}
+.contact-details p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+.contact-details a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-details a:hover {
+    color: #6a11cb;
+}
+.contact-form {
+    margin-top: 2rem;
+    text-align: left;
+}
+.contact-form h3 {
+    color: #2575fc;
+    margin-bottom: 1rem;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.contact-form button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.contact-form button:hover {
+    background: #ffde59;
+    color: #333;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanya Gopal's Portfolio</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8);
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 25px;
+      margin: 20px auto;
+      max-width: 1200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+
+    header img:hover {
+      transform: scale(1.1);
+    }
+
+    header h1 {
+      margin-left: 10px;
+      font-size: 1.5rem;
+    }
+
+    header nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+
+    header nav a:hover {
+      color: #fff;
+      background: linear-gradient(90deg, #ff6f91, #d16ba5);
+      transform: scale(1.1);
+    }
+
+    section.hero {
+      text-align: center;
+      padding: 50px 20px;
+      color: #fff;
+      background: linear-gradient(to top, #c777b9, #ba83ca);
+      border-radius: 15px;
+      margin: 20px auto;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    section.hero h2 {
+      font-size: 3rem;
+    }
+
+    section.hero p {
+      margin: 20px 0;
+      font-size: 1.2rem;
+    }
+
+    section.hero button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+
+    section.hero button:hover {
+      background: linear-gradient(90deg, #8e24aa, #6a1b9a);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    section.about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    section.about img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      margin-right: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    section.about img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    section.about .about-content {
+      flex: 1;
+    }
+
+    section.about h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #6a1b9a;
+      font-size: 1.5rem;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #8e24aa;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="Tanya.jpg" alt="Profile">
+      <h1>It's me Tanya Gopal!</h1>
+    </div>
+    <nav>
+      <a href="aboutme.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Tanya's Portfolio</h2>
+    <p>Dive into the colorful world of AI and ML engineering!</p>
+    <button>Explore Now</button>
+  </section>
+
+  <section class="about" id="about">
+    <img src="Tanya.jpg" alt="Tanya Gopal">
+    <div class="about-content">
+      <h2>Meet Me - Tanya Gopal</h2>
+      <p>
+        Welcome to my vibrant corner of the internet! I'm Tanya Gopal, a B.Tech in Computer Science and Engineering 
+        (Artificial Intelligence and Machine Learning) student, passionate about transforming data into dazzling insights.
+      </p>
+      <p>
+        From neural networks to Explainable AI (XAI), I dabble in all things AI. My projects are artistic expressions, 
+        each with its own story and flair.
+      </p>
+    </div>
+  </section>
+  <footer>
+    <p class="connect-text"><strong>Connect with me!</strong></p>
+    <br>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/_tanya_gopal" target="_blank" title="Instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" height="60" width="60">
+      </a>
+      <a href="https://wa.me/7090885590" target="_blank" title="WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" height="60" width="60">
+      </a>
+      <a href="https://www.linkedin.com/in/tanya-gopal" target="_blank" title="LinkedIn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" height="60" width="60">
+      </a>
+    </div>
+    <br><br>
+    <p class="connect-text">&copy; 2024 Tanya Gopal. All rights reserved.</p>
+  </footer>
+  <style>
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.9); 
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      background-image: url('116.jpg'); 
+      background-size: cover; 
+      background-position: center; 
+      color: #fff;
+    }
+    .connect-text {
+      color: black; 
+    }
+    .social-icons {
+      margin-top: 10px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #fff;
+      transition: transform 0.3s;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+  </style>
+  </body>
+  </html>
+  
